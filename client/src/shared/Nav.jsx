@@ -6,12 +6,12 @@ class Nav extends React.Component {
     constructor() {
         super()
         this.state = {
-            display: 'active'
+            display: false
         }
     }
 
-    handleclick = () => {
-        this.setState({display: 'inactive'})
+    handleClick = () => {
+        this.setState({display: !this.state.display})
     }
 
     render() {
@@ -19,13 +19,11 @@ class Nav extends React.Component {
             <div>
                 <div className='nav-bar'>
                     <NavLink className='nav-link home-link' to='/'>HOME</NavLink>
-                    <div className='drop-down'>
-                        <div>
-                            <img className='burger' onClick={this.handleClick} alt='burger menu' src={burger}/>
-                        </div>
+                    <div onClick={this.handleClick} className={this.state.display == true? 'rotate' : 'norotate'}>
+                        <img className='burger' alt='burger menu' src={burger}/>
                     </div>
                 </div>
-                <div className={this.state.display}>
+                <div className={this.state.display == true? 'active' : 'inactive'}>
                     <NavLink className='nav-link' to='/about'>ABOUT</NavLink>
                     <NavLink className='nav-link' to='/projects'>PROJECTS</NavLink>
                     <NavLink className='nav-link' to='/contact'>CONTACT</NavLink>

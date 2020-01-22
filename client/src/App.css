@@ -2,8 +2,8 @@ body {
   font-family: 'Lato', sans-serif;
   background-image: linear-gradient(
     to right bottom, 
-    rgba(138, 211, 240, 0.8), 
-    rgba(244, 163, 145, 0.8));
+    rgba(87, 191, 233, 0.8), 
+    rgba(245, 136, 111, 0.8));
   color: white;
   height: 100vh;
 }
@@ -27,7 +27,7 @@ body {
 .home-link {
   margin: 30px;
   left: 0;
-  color:  #FFA3A3;
+  color:  white;
 }
 .home {
   text-align: center;
@@ -62,4 +62,30 @@ body {
 }
 .rotate {
   transform: rotate(90deg)
+}
+.projects {
+  display: flex;
+  justify-content: space-around;
+}
+.coinfox {
+  width: 300px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 20px;
+}
+.coinfox-gif {
+  width: 300px;
+}
+.project-link {
+  /* text-decoration: none; */
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.project-link:hover {
+  color: #951111;
 }

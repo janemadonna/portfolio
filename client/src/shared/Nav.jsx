@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import burger from '../images/menu-24px.svg'
+import burger from '../images/hamburg.svg'
 
 class Nav extends React.Component {
     constructor() {

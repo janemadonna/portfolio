@@ -2,8 +2,8 @@ body {
   font-family: 'Lato', sans-serif;
   background-image: linear-gradient(
     to right bottom, 
-    rgba(87, 191, 233, 0.8), 
-    rgba(245, 136, 111, 0.8));
+    rgba(245, 136, 111, 0.8), 
+    rgba(87, 191, 233, 0.8));
   color: white;
   height: 100vh;
 }
@@ -41,7 +41,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .burger {
-  width: 25px;
+  width: 35px;
   margin: 30px;
 }
 .drop-down {
@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.coinfox {
+.coinfox, .astral-plan, .worder {
   width: 300px;
   display:flex;
   flex-direction: column;

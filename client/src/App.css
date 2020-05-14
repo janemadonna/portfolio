@@ -6,6 +6,7 @@ body {
     rgba(87, 191, 233, 0.8));
   color: white;
   height: 100vh;
+  background-size: cover;
 }
 .nav-bar {
   display: flex;
@@ -88,4 +89,33 @@ a {
 }
 .project-link:hover {
   color: #951111;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.about img {
+  width: 40%;
+  margin: 20px;
+}
+
+.about p {
+  width: 40%;
+  margin: 20px;
+}
+
+.home img {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 30%;
+}
+
+.contact {
+  position: absolute;
+  left: 40%;
 }

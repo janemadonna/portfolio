@@ -58,6 +58,7 @@ body {
 .projects {
   display: flex;
   justify-content: space-around;
+  margin: 0 60px;
 }
 .coinfox, .astral-plan, .worder {
   width: 300px;
@@ -112,6 +113,15 @@ a {
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact img {
+  width: 50%;
   position: absolute;
-  left: 40%;
+  bottom: 0;
+  margin: 0 auto;
+  left: 25%;
 }

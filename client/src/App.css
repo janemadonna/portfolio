@@ -41,10 +41,10 @@ body {
   margin: 30px;
 }
 .active {
-  
   margin: 10px;
+}
+.absolute {
   position: absolute;
-
 }
 .inactive {
   display: none;

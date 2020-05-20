@@ -23,9 +23,11 @@ class Nav extends React.Component {
                     </div>
                 </div>
                 <div className={this.state.display == true? 'active' : 'inactive'}>
-                    <NavLink className='nav-link' to='/about'>ABOUT</NavLink>
-                    <NavLink className='nav-link' to='/projects'>PROJECTS</NavLink>
-                    <NavLink className='nav-link' to='/contact'>CONTACT</NavLink>
+                    <div className='absolute'>
+                        <NavLink className='nav-link' to='/about'>ABOUT</NavLink>
+                        <NavLink className='nav-link' to='/projects'>PROJECTS</NavLink>
+                        <NavLink className='nav-link' to='/contact'>CONTACT</NavLink>
+                    </div>
                 </div>
             </div>
         )

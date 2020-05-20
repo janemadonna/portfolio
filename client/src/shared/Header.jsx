@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
         <header>
-            <h1 className='name'>JANE COGGER</h1>
+            <NavLink className='name' to='/'><h1>JANE COGGER</h1></NavLink>
         </header>
     )
 }

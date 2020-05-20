@@ -18,7 +18,6 @@ class Nav extends React.Component {
         return (
             <div>
                 <div className='nav-bar'>
-                    <NavLink className='nav-link home-link' to='/'>HOME</NavLink>
                     <div onClick={this.handleClick} className={this.state.display == true? 'rotate' : 'norotate'}>
                         <img className='burger' alt='burger menu' src={burger}/>
                     </div>

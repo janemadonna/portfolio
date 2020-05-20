@@ -18,18 +18,12 @@ body {
   color: white;
   text-decoration: none;
   margin: 10px;
+  display: block;
 }
 .nav-link:hover {
   color: #951111;
 }
-.footer {
-  text-align: center;
-}
-.home-link {
-  margin: 30px;
-  left: 0;
-  color:  white;
-}
+
 .home {
   text-align: center;
 }
@@ -40,21 +34,16 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }
 .burger {
   width: 35px;
   margin: 30px;
 }
-.drop-down {
-  display: flex;
-  flex-direction: column;
-
-}
 .active {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  
   margin: 10px;
+  position: absolute;
 
 }
 .inactive {

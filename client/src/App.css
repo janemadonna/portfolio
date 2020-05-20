@@ -48,12 +48,14 @@ body {
 .drop-down {
   display: flex;
   flex-direction: column;
+
 }
 .active {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 10px;
+
 }
 .inactive {
   display: none;
@@ -107,12 +109,17 @@ a {
   margin: 20px;
 }
 
+.home {
+  display: flex;
+  justify-content: space-around;
+}
+
 .home img {
   width: 50%;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
-  left: 30%;
+  left: 25%;
 }
 
 .contact {

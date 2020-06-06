@@ -123,4 +123,7 @@ a {
   .projects {
     flex-direction: column;
   }
+  .nav-header {
+    flex-direction: column;
+  }
 }

@@ -3,9 +3,15 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <header>
-            <NavLink className='name' to='/'><h1>JANE COGGER</h1></NavLink>
-        </header>
+        <div>
+            <NavLink className='nav-link' to='/about'>ABOUT</NavLink>
+            <NavLink className='nav-link' to='/projects'>PROJECTS</NavLink>
+            <header>
+                <NavLink className='name' to='/'><h1>JANE COGGER</h1></NavLink>
+            </header>
+            <NavLink className='nav-link' to='/contact'>CONTACT</NavLink>
+        
+        </div>
     )
 }
 

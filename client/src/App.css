@@ -8,9 +8,10 @@ body {
   height: 100vh;
   background-size: cover;
 }
-.nav-bar {
+.nav-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   color: white;
   align-items: center;
 }
@@ -31,30 +32,13 @@ body {
   letter-spacing: 10px;
   text-align: center;
   top: 30px;
+  color: white;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
-.burger {
-  width: 35px;
-  margin: 30px;
-}
-.active {
-  margin: 10px;
-}
-.absolute {
-  position: absolute;
-}
-.inactive {
-  display: none;
-}
-.burger:hover {
-  cursor: pointer;
-}
-.rotate {
-  transform: rotate(90deg)
-}
+
+
 .projects {
   display: flex;
   justify-content: space-around;

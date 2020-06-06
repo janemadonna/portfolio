@@ -15,6 +15,9 @@ body {
   color: white;
   align-items: center;
 }
+.nav-links {
+  display: flex;
+}
 .nav-link {
   color: white;
   text-decoration: none;
@@ -33,9 +36,6 @@ body {
   text-align: center;
   top: 30px;
   color: white;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 
@@ -86,6 +86,7 @@ a {
 .home {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .home img {

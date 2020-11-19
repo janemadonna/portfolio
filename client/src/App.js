@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './shared/Nav'
 import './App.css';
 import Routes from './routes'
 import Header from './shared/Header'

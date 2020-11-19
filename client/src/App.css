@@ -25,11 +25,16 @@ body {
   background-color: rgb(255, 217, 217);
   padding: 20px 10px;
   border-radius: 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 2px 2px 2px gray;
+  text-shadow: 2px 2px 2px rgb(253, 171, 171);
 }
 .nav-link:hover {
-  color: #951111;
+  /* color: rgb(253, 171, 171); */
+  background-color: white;
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px rgb(255, 217, 217);
+  font-family: 'Rouge Script', cursive;
 }
 
 .home {
@@ -78,12 +83,17 @@ body {
   display:flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 2px 2px 2px gray;
   padding: 30px;
   margin: 20px;
   background-color: rgb(255, 217, 217);
 }
+
+.project-title {
+  letter-spacing: 5px;
+}
+
 .coinfox-gif {
   width: 300px;
 }
@@ -108,7 +118,11 @@ a {
   width: 40%;
   margin: 20px;
   box-shadow: 2px 2px 2px gray;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.about img:hover {
+  transform: scale(1.2);
 }
 
 .about p {
@@ -117,9 +131,10 @@ a {
   font-size: 20px;
   color: black;
   background-color: rgb(255, 217, 217);
-  padding: 50px;
-  border: 1px solid black;
+  padding: 40px;
+  /* border: 1px solid black; */
   box-shadow: 2px 2px 2px gray;
+  line-height: 30px;
 }
 
 .home {

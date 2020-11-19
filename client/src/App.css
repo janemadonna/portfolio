@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  background-color: rgb(173, 173, 173);
+  background-color: rgb(253, 171, 171);
   color: white;
   height: 100vh;
   background-size: cover;
@@ -8,12 +8,14 @@ body {
 .nav-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   align-items: center;
+  margin: 30px 100px;
 }
 .nav-links {
   display: flex;
+  margin-top: 90px;
 }
 .nav-link {
   color: white;
@@ -28,18 +30,41 @@ body {
 .home {
   text-align: center;
 }
+
+@keyframes changeopacity {
+  0%   { opacity:1; }
+  30%  { opacity:0; }
+  100% { opacity:1; }
+}
+
 .name {
   letter-spacing: 10px;
   text-align: center;
-  top: 30px;
   color: white;
+  font-family: 'Rouge Script', cursive;
+  animation: opacity2 3s infinite;
+  position: absolute;
+  font-size: 20px;
 }
 
+@keyframes opacity2 {
+  0% { opacity:0; }
+  70% { opacity:1; }
+  100% { opacity:0; }
+}
+
+.name2 {
+  position: absolute;
+  color: white;
+  letter-spacing: 10px;
+  animation: changeopacity 3s infinite;
+  font-size: 20px;
+}
 
 .projects {
   display: flex;
   justify-content: space-around;
-  margin: 0 60px;
+  margin: 70px 60px;
 }
 .coinfox, .astral-plan, .worder {
   width: 300px;
@@ -98,6 +123,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact p {
+  margin-top: 80px;
 }
 
 .contact img {

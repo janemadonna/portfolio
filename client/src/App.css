@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: rgb(253, 171, 171);
-  color: white;
+  color: black;
   height: 100vh;
   background-size: cover;
 }
@@ -18,15 +18,15 @@ body {
   margin-top: 90px;
 }
 .nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   margin: 10px;
   display: block;
-  background-color: rgb(255, 167, 4);
+  background-color: rgb(255, 217, 217);
   padding: 20px 10px;
   border-radius: 50%;
-  border: 1px solid white;
-  box-shadow: 2px 2px 2px rgb(252, 118, 140);
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px gray;
 }
 .nav-link:hover {
   color: #951111;
@@ -50,7 +50,7 @@ body {
   animation: opacity2 3s infinite;
   position: absolute;
   font-size: 20px;
-  text-shadow: 2px 2px 2px red;
+  text-shadow: 2px 2px 2px black;
 }
 
 @keyframes opacity2 {
@@ -65,7 +65,7 @@ body {
   letter-spacing: 10px;
   animation: changeopacity 3s infinite;
   font-size: 20px;
-  text-shadow: 2px 2px 2px red;
+  text-shadow: 2px 2px 2px black;
 }
 
 .projects {
@@ -78,22 +78,24 @@ body {
   display:flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid white;
-  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px gray;
+  padding: 30px;
   margin: 20px;
+  background-color: rgb(255, 217, 217);
 }
 .coinfox-gif {
   width: 300px;
 }
 .project-link {
   /* text-decoration: none; */
-  color: white;
+  color: #951111;
 }
 a {
   text-decoration: none;
 }
 .project-link:hover {
-  color: #951111;
+  color: black;
 }
 
 .about {
@@ -105,12 +107,19 @@ a {
 .about img {
   width: 40%;
   margin: 20px;
+  box-shadow: 2px 2px 2px gray;
+  border: 1px solid black;
 }
 
 .about p {
   width: 40%;
   margin: 20px;
   font-size: 20px;
+  color: black;
+  background-color: rgb(255, 217, 217);
+  padding: 50px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px gray;
 }
 
 .home {
@@ -136,6 +145,7 @@ a {
 .contact p {
   margin-top: 80px;
   font-size: 40px;
+  text-shadow: 3px 3px 2px rgb(255, 217, 217);
 }
 
 .contact img {

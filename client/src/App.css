@@ -173,9 +173,12 @@ a {
 }
 @media screen and (max-width: 600px) {
   .name, .name2 {
-    font-size: 20px;
+    font-size: 15px;
     left: 15%;
     margin-bottom: 30px;
+  }
+  .nav-links {
+    margin-top: 130px;
   }
   .home img {
     width: 75%;

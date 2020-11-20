@@ -94,7 +94,9 @@ body {
 .project-title {
   letter-spacing: 5px;
 }
-
+.projects p {
+  text-align: justify;
+}
 .coinfox-gif {
   width: 300px;
 }
@@ -136,6 +138,7 @@ a {
   /* border: 1px solid black; */
   box-shadow: 2px 2px 2px gray;
   line-height: 30px;
+  text-align: justify;
 }
 
 .home {
@@ -172,9 +175,13 @@ a {
   left: 25%;
 }
 @media screen and (max-width: 600px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+  }
   .name, .name2 {
     font-size: 15px;
-    left: 15%;
+    left: 10%;
     margin-bottom: 30px;
   }
   .nav-links {
@@ -197,6 +204,7 @@ a {
   }
   .projects {
     flex-direction: column;
+    align-items: center;
   }
   .nav-header {
     flex-direction: column;
@@ -207,5 +215,12 @@ a {
   .contact img {
     width: 75%;
     left: 15%;
+  }
+  .projects {
+    margin: 50px auto;
+  }
+  .about {
+    margin: 50px 30px;
+    align-items: center;
   }
 }

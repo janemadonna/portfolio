@@ -28,6 +28,7 @@ body {
   /* border: 1px solid black; */
   box-shadow: 2px 2px 2px gray;
   text-shadow: 2px 2px 2px rgb(253, 171, 171);
+  letter-spacing: 2px;
 }
 .nav-link:hover {
   /* color: rgb(253, 171, 171); */

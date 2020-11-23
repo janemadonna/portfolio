@@ -3,23 +3,32 @@ import './App.css';
 import Routes from './routes'
 import Header from './shared/Header'
 import Button from './shared/Button'
-import Toggler from './shared/Toggler'
 
-function App() {
-  const styles = {
-    backgroundColor: 'blue'
+class App extends React.Component {
+  state = {
+    blue: false
   }
-  return (
-    <Toggler render={(blue) => {
-      return (
-        <div className="App" style={blue ? styles : null}>
-          <Button />
-          <Header />
-          <Routes />
-        </div>
-      )
-    }} />
-  );
+
+  toggle = () => {
+    this.setState(prevState => {
+        return {
+            blue: !prevState.blue
+        }
+    })
+}
+
+  render() {
+    const styles = {
+      backgroundColor: 'rgb(125, 179, 248)'
+    }
+    return (
+          <div className="App" style={this.state.blue ? styles : null}>
+            <Button toggle={this.toggle} blue={this.state.blue} />
+            <Header blue={this.state.blue} />
+            <Routes blue={this.state.blue} />
+          </div>
+    );
+  }
 }
 
 export default App;

@@ -1,16 +1,13 @@
 import React from 'react'
-import Toggler from './Toggler'
 
-const Button = () => {
+const Button = (props) => {
+    const styles = {
+        backgroundColor: 'rgb(255, 217, 217)'
+    }
     return (
-        <Toggler render={(blue, toggle) => {
-            return (
-                <button onClick={toggle}>
-                    {blue ? 'make it pink!' : 'make it blue!'}
+                <button onClick={props.toggle} style={props.blue ? styles : null} >
+                    {props.blue ? 'make it pink!' : 'make it blue!'}
                 </button>
-            )
-        }}
-         />
     )
 }
 

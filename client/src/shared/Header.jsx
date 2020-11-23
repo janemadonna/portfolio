@@ -1,7 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = (props) => {
+    const styles = {
+        backgroundColor: 'rgb(184, 229, 255)'
+    }
     return (
         <div className='nav-header'>
             <header>
@@ -9,9 +12,9 @@ const Header = () => {
                 <NavLink className='name2' to='/'><h1>JANE COGGER</h1></NavLink>
             </header>
             <div className='nav-links'>
-                <NavLink className='nav-link' to='/about'>ABOUT</NavLink>
-                <NavLink className='nav-link' to='/projects'>PROJECTS</NavLink>
-                <NavLink className='nav-link' to='/contact'>CONTACT</NavLink>
+                <NavLink className='nav-link' style={props.blue ? styles : null} to='/about'>ABOUT</NavLink>
+                <NavLink className='nav-link' style={props.blue ? styles : null} to='/projects'>PROJECTS</NavLink>
+                <NavLink className='nav-link' style={props.blue ? styles : null} to='/contact'>CONTACT</NavLink>
             </div>
         
         </div>

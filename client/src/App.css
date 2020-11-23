@@ -198,6 +198,7 @@ a {
     font-size: 15px;
     left: 10%;
     margin-bottom: 30px;
+    margin-top: 50px;
   }
   .nav-links {
     margin-top: 130px;
@@ -237,5 +238,8 @@ a {
   .about {
     margin: 50px 30px;
     align-items: center;
+  }
+  button {
+    left: 40%;
   }
 }

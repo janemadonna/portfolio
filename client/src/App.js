@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from 'react-helmet'
 import './App.css';
 import Routes from './routes'
 import Header from './shared/Header'
@@ -22,7 +23,10 @@ class App extends React.Component {
       backgroundColor: 'rgb(125, 179, 248)'
     }
     return (
-          <div className="App" style={this.state.blue ? styles : null}>
+          <div className="App">
+            <Helmet>
+              <style>{this.state.blue ? 'body { background-color: rgb(125, 179, 248); }' : null}</style>
+            </Helmet>
             <Button toggle={this.toggle} blue={this.state.blue} />
             <Header blue={this.state.blue} />
             <Routes blue={this.state.blue} />

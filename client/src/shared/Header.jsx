@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom'
 
 const Header = (props) => {
     const styles = {
-        backgroundColor: 'rgb(184, 229, 255)'
+        backgroundColor: 'rgb(184, 229, 255)',
+        '&:hover': {
+            backgroundColor: 'white'
+        }
     }
     return (
         <div className='nav-header'>

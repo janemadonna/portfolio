@@ -19,9 +19,6 @@ class App extends React.Component {
 }
 
   render() {
-    const styles = {
-      backgroundColor: 'rgb(125, 179, 248)'
-    }
     return (
           <div className="App">
             <Helmet>

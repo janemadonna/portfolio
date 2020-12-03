@@ -2,6 +2,7 @@ import React from 'react'
 import coinfox from '../images/coinfox.gif'
 import astralPlan from '../images/astral-plan.gif'
 import worder from '../images/wOrder.gif'
+import gematrial from '../images/gematrial.mov'
 
 const Projects = (props) => {
     const styles = {
@@ -9,6 +10,12 @@ const Projects = (props) => {
     }
     return (
         <div className='projects'>
+            <div className='gematrial' style={props.blue ? styles : null}>
+                <h4 className='project-title'>GEMATRIAL</h4>
+                <p>A gematria app that turns words into numbers and numbers into words, based on Hebrew associations.  Built with React.</p>
+                <video className='gematria-mov' width='300' autoPlay loop muted><source src={gematrial} /></video>
+                <a href='http://gematrial.com'><p className='project-link'>Visit Gematrial</p></a>
+            </div>
             <div className='worder' style={props.blue ? styles : null}>
                 <h4 className='project-title'>WORDER</h4>
                 <p>A dictionary and poetry anthology, compiled from words and poems created by users.  Back-end made with Ruby on Rails, front-end made with React.</p>

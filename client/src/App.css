@@ -94,10 +94,11 @@ button:focus {
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 70px 60px;
 }
-.coinfox, .astral-plan, .worder {
+.coinfox, .astral-plan, .worder, .gematrial {
   width: 300px;
   display:flex;
   flex-direction: column;
@@ -115,7 +116,7 @@ button:focus {
 .projects p {
   text-align: justify;
 }
-.coinfox-gif {
+.coinfox-gif, .gematrial-mov {
   width: 300px;
 }
 .project-link {
@@ -192,6 +193,9 @@ a {
   margin: 0 auto;
   left: 25%;
 }
+
+
+
 @media screen and (max-width: 900px) {
   .nav-header {
     flex-direction: column;

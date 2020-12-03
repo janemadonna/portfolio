@@ -167,11 +167,11 @@ a {
 }
 
 .home img {
-  width: 50%;
+  width: 40%;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
-  left: 25%;
+  left: 30%;
 }
 
 .contact {
@@ -187,11 +187,11 @@ a {
 }
 
 .contact img {
-  width: 50%;
+  width: 40%;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
-  left: 25%;
+  left: 30%;
 }
 
 

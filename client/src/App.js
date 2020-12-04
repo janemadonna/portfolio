@@ -22,7 +22,9 @@ class App extends React.Component {
     return (
           <div className="App">
             <Helmet>
-              <style>{this.state.blue ? 'body { background-color: rgb(125, 179, 248); }' : null}</style>
+              <style>{this.state.blue ? 
+              'body { background-color: rgb(155, 209, 278); }' : 
+              null}</style>
             </Helmet>
             <Button toggle={this.toggle} blue={this.state.blue} />
             <Header blue={this.state.blue} />
